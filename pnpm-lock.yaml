@@ -1,0 +1,17 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  packages/a: {}
+
+  packages/b:
+    dependencies:
+      '@zwmorg/a':
+        specifier: workspace:^
+        version: link:../a
